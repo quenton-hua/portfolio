@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>websitebs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/4-Column-Team-Block---Circles.css">
+    <link rel="stylesheet" href="assets/css/Articles-Cards-images.css">
+    <link rel="stylesheet" href="assets/css/Icon-Centered-Between-Lines.css">
+    <link rel="stylesheet" href="assets/css/Navbar-Centered-Links-icons.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Footer-.css">
+    <link rel = "stylesheet" href = "assets/css/style.css">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+    <style>
+        #dropshadow {
+            padding: 10px;
+            box-shadow: 5px 10px 18px #dbdbdb;
+        }
+        /* Modify the background color */
+         
+        .navbar-custom {
+            background-color: white;
+            height: 3.75rem;
+            
+        }
+        /* Modify brand and text color */
+         
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: green;
+        }
+
+        .navbaralign {
+            margin-left: 6rem;
+        }
+
+        .btn-custom{
+            align-items: center;
+            background-color: #fff;
+            border: 2px solid #000;
+            box-sizing: border-box;
+            color: #000;
+            cursor: pointer;
+            display: inline-flex;
+            fill: #000;
+            font-family: Inter,sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            height: 48px;
+            justify-content: center;
+            letter-spacing: -.8px;
+            line-height: 24px;
+            min-width: 140px;
+            outline: 0;
+            padding: 0 17px;
+            text-align: center;
+            text-decoration: none;
+            transition: all .3s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            margin-right: 2rem;
+        }
+
+        .btn-custom:focus {
+        color: #171e29;
+        }
+
+        .btn-custom:hover {
+        border-color: #06f;
+        color: #06f;
+        fill: #06f;
+        }
+
+        .btn-custom:active {
+        border-color: #06f;
+        color: #06f;
+        fill: #06f;
+        }
+        
+        @media (min-width: 768px) {
+        .btn-custom {
+            min-width: 170px;
+        }
+        }
+
+        .button-animated{
+        transition: font-size 0.25s ease-in-out;
+        }
+        .button-animated:hover{
+            font-size: 1.1em;
+        }
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+            }
+        }
+ 
+    </style>
+</head>
+
+<body>
+
+    <nav id= "dropshadow" class="navbar navbar-light navbar-expand-md py-3 fixed-top " style="height:3rem;background-image: linear-gradient(white,white, rgb(241, 241, 241));">
+        <div class="container" style="background-color: red; padding: 0; height:inherit;">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <span></span>
+            </a>
+            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3">
+                <span class="visually-hidden"></span><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-3" style="background-color: blue; height:inherit;">
+                <ul class="navbar-nav me-auto" style="background-color: green; ">
+                    <li class="nav-item"><a class="nav-link nav-font active" href="#home" style="background-color: green;">Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-font" href="#projects-anchor">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link nav-font" href="#skills">Skills &amp; Education</a></li>
+                    <li class="nav-item"><a class="nav-link nav-font" href="#contact">Contact</a></li>
+                </ul>
+                <div style="margin-left: auto; margin-right: 0; margin-top: ;">
+                    <form action="assets/assets/Resume.pdf" method="get" target="_blank">
+                        <button class ="btn-custom button-animated" type="submit">Resume</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div id="home">
+        <section>
+            <div class="container">
+                <div class="row" id="title1">
+                    <div class="col col-md-6 col-sm-12 col-12">
+                        <p id="home-subtitle-text">MY NAME IS&nbsp;</p>
+                    </div>
+                    <div class="col col-md-6" id="profilepic"></div>
+                </div>
+                <div class="row">
+                    <div class="col col-md-6">
+                        <p id="home-title-text">Quenton Hua</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-md-6">
+                        <p id="home-paragraph-text"> Junior at Texas A&amp;M University pursuing a bachelors in computer engineering with work experience using agile workflow methodologies and developing machine learning models. Proficient in C++ , Python, and Javascript. </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-md-6">
+                        <a href="https://github.com/quenton-hua" class="icon icon-animated" target="_blank">
+                            <img src="assets/assets/github_icon.png" alt="github Icon" class = "icon" >
+                        </a>
+                        <a href="https://www.linkedin.com/in/quenton-hua-9a0571173/" class="icon icon-animated" target="_blank">
+                            <img src="assets/assets/linkedin_icon.png" alt= "linkedin Icon" class = "icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <a id="projects-anchor" class="anchor"></a>
+    <div id="projects" >
+        <!-- Carousel-->
+    <!--
+        <section class="pt-5 pb-5">
+            <div class="container" >
+                <div class="row" >
+                    <div class="col-6" >
+                        <h3 class="mb-3">Projects </h3>
+                    </div>
+                    <div class="col-6 text-right">
+                        <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                            <i class="fa fa-arrow-left"></i>
+                        </a>
+                        <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="col-12" >
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-interval="false">
+        
+                            <div class="carousel-inner ">
+                                <div class="carousel-item active">
+                                    <div class="row">
+        
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card card-custom hvr-grow-shadow" ><img class="card-img-top w-100 d-block fit-cover article-card-img" src="assets/assets/headshot.jpg">
+                                                <div class="card-body p-4 article-card-body custom-card-prop scroll" >
+                                                    <h4 class="article-card-title-text">Personal Website</h4>
+                                                    <p class = "article-card-subtitle-text"> HTML5, CSS, Javascript</p>
+                                                    <p class="article-card-paragraph-text"  >A portfolio website made using HTML5, CSS, Javascript, and the Bootstrap framework to log all my software projects. </p>
+                        
+                                                </div>
+                                                <div style="height:4rem;padding-top:1rem;padding-right: 1rem;">
+                                                    <button class="github-button" role="button">Github</button>
+                                                    <button class="demo-button" role="button">Demo</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card card-custom hvr-grow-shadow"><img class="card-img-top w-100 d-block fit-cover article-card-img" src="assets/assets/headshot.jpg">
+                                                <div class="card-body p-4 article-card-body custom-card-prop scroll" >
+                                                    <h4 class="article-card-title-text">Mental Health Tracker (Blossom)</h4>
+                                                    <p class = "article-card-subtitle-text"> HTML5, CSS, Javascript</p>
+                                                    <p class="article-card-paragraph-text"  >Hackathon project that lets users log their mood given the selection of 5 emoticons (happy-sad). The application logs a user’s input and allows them to see trendlines of their emoticon selections. This project won Tamuhack 2022 Code for Good challenge and was made using HTML5, CSS, and Javascript. </p>
+                        
+                                                </div>
+                                                <div style="height:4rem;padding-top:1rem;padding-right: 1rem;">
+                                                    <button class="github-button" role="button">Github</button>
+                                                    <button class="demo-button" role="button">Demo</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card card-custom hvr-grow-shadow"><img class="card-img-top w-100 d-block fit-cover article-card-img" src="assets/assets/headshot.jpg">
+                                                <div class="card-body p-4 article-card-body custom-card-prop scroll" >
+                                                    <h4 class="article-card-title-text">NAE Solar Calculator</h4>
+                                                    <p class = "article-card-subtitle-text"> MATLAB</p>
+                                                    <p class="article-card-paragraph-text"  >MATLAB application that calculates the recommended size for a solar farm given the user’s house square footage. Application finds cheapest cost from hundreds of solar panel companies and calculates the amount of time it takes to offset cost of setting up and maintaining the solar farm from the electricity generated. Application utilized many public databases to make calculations.</p>
+                        
+                                                </div>
+                                                <div style="height:4rem;padding-top:1rem;padding-right: 1rem;">
+                                                    <button class="github-button" role="button">Github</button>
+                                                    <button class="demo-button" role="button">Demo</button>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+        
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card card-custom hvr-grow-shadow"><img class="card-img-top w-100 d-block fit-cover article-card-img" src="assets/assets/headshot.jpg">
+                                                <div class="card-body p-4 article-card-body custom-card-prop scroll" >
+                                                    <h4 class="article-card-title-text">Personal Website</h4>
+                                                    <p class = "article-card-subtitle-text"> HTML5, CSS, Javascript</p>
+                                                    <p class="article-card-paragraph-text"  >t quam. Donec id elit non mi porta gravida at eget metus.Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.v</p>
+                        
+                                                </div>
+                                                <div style="height:4rem;padding-top:1rem;padding-right: 1rem;">
+                                                    <button class="github-button" role="button">Github</button>
+                                                    <button class="demo-button" role="button">Demo</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Special title treatment</h4>
+                                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Special title treatment</h4>
+                                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+        
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Special title treatment</h4>
+                                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+                                                </div>
+        
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Special title treatment</h4>
+                                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="assets/assets/landscape.jpg">
+                                                <div class="card-body p-4">
+                                                    <h4 class="card-title">Project Name 1</h4>
+                                                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                                    <div class="d-flex">
+                                                        <div id="projcarddateandtime">
+                                                            <p class="text-muted mb-0">October 2020</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    -->
+        <!-- end-->
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <h2 style="font-size: 35.384px;font-family: 'Plus Jakarta Sans', sans-serif;"><strong>Project Portfolio</strong></h2>
+                    <p class="w-lg-50"></p>
+                </div>
+            </div>
+        </div>
+        <div class="container py-4 py-xl-5" >
+            <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+                <div class="col">
+                    <div class="card card-custom hvr-grow-shadow" ><img class="card-img-top w-100 d-block fit-cover article-card-img" src="assets/assets/headshot.jpg">
+                        <div class="card-body p-4 article-card-body custom-card-prop scroll" >
+                            <h4 class="article-card-title-text">Personal Website</h4>
+                            <p class = "article-card-subtitle-text"> HTML5, CSS, Javascript</p>
+                            <p class="article-card-paragraph-text"  >A portfolio website made using HTML5, CSS, Javascript, and the Bootstrap framework to log all my software projects. </p>
+
+                        </div>
+                        <div style="height:4rem;padding-top:1rem;padding-right: 1rem;">
+                            <button class="github-button" role="button">Github</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                        <div class="card card-custom hvr-grow-shadow"><img class="card-img-top w-100 d-block fit-cover article-card-img" src="assets/assets/headshot.jpg">
+                            <div class="card-body p-4 article-card-body custom-card-prop scroll" >
+                                <h4 class="article-card-title-text">NAE Solar Calculator</h4>
+                                <p class = "article-card-subtitle-text"> MATLAB</p>
+                                <p class="article-card-paragraph-text"  >MATLAB application that calculates the recommended size for a solar farm given the user’s house square footage. Application finds cheapest cost from hundreds of solar panel companies and calculates the amount of time it takes to offset cost of setting up and maintaining the solar farm from the electricity generated. Application utilized many public databases to make calculations.</p>
+    
+                            </div>
+                            <div style="height:4rem;padding-top:1rem;padding-right: 1rem;">
+                            </div>
+                        </div>
+                </div>
+                <div class="col">
+                        <div class="card card-custom hvr-grow-shadow"><img class="card-img-top w-100 d-block fit-cover article-card-img" src="assets/assets/headshot.jpg">
+                            <div class="card-body p-4 article-card-body custom-card-prop scroll" >
+                                <h4 class="article-card-title-text">Mental Health Tracker (Blossom)</h4>
+                                <p class = "article-card-subtitle-text"> HTML5, CSS, Javascript</p>
+                                <p class="article-card-paragraph-text"  >Hackathon project that lets users log their mood given the selection of 5 emoticons (happy-sad). The application logs a user’s input and allows them to see trendlines of their emoticon selections. This project won Tamuhack 2022's Best Hack for Social Good  and was made using HTML5, CSS, and Javascript. </p>
+    
+                            </div>
+                            <div style="height:4rem;padding-top:1rem;padding-right: 1rem;">
+
+                                <form action="https://devpost.com/software/blossom-8r5e1n" method="get" target="_blank">
+                                    <button class="demo-button" role="button" >Demo</button>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="skills">
+        <div class="container">
+
+
+
+  <div class="rightbox" style="background-color:gray">
+    <div class="rb-container">
+      <ul class="rb">
+        <li class="rb-item" ng-repeat="itembx">
+          <div class="timestamp">
+            3rd May 2020<br> 7:00 PM
+          </div>
+          <div class="item-title">Chris Serrano posted a photo on your wall.</div>
+
+        </li>
+        <li class="rb-item" ng-repeat="itembx">
+          <div class="timestamp">
+            19th May 2020<br> 3:00 PM
+          </div>
+          <div class="item-title">Mia Redwood commented on your last post.</div>
+
+        </li>
+
+        <li class="rb-item" ng-repeat="itembx">
+          <div class="timestamp">
+            17st June 2020<br> 7:00 PM
+          </div>
+          <div class="item-title">Lucas McAlister just send you a message.</div>
+
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</div>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <h2 style="font-size: 35.384px;font-family: 'Plus Jakarta Sans', sans-serif;"><strong>Skills &amp; Education</strong></h2>
+                    <p class="w-lg-50"></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="font-family: 'Plus Jakarta Sans', sans-serif;font-size: 20px;">Languages</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 skill-card-spacing">
+                    <div></div>
+                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">C++</span>
+                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">Javascript</span>
+                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">HTML</span>
+                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">CSS</span>
+                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">Python</span>
+                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">MATLAB</span>
+                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">Verilog</span>
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <p style="font-family: 'Plus Jakarta Sans', sans-serif;font-size: 20px;">Frameworks/Packages</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 skill-card-spacing">
+                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">Amazon Web Services (AWS)</span>
+                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">NumPy</span>
+                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">Pandas</span>
+                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">Tensorflow</span>
+                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">Jupyter</span>
+                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">Bootstrap</span>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="font-family: 'Plus Jakarta Sans', sans-serif;font-size: 20px;">Software</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12"></div>
+                <div class="col-md-12">
+                    <span class="skill-card" style="font-family: 'Plus Jakarta Sans', sans-serif;">Amazon Web Services (AWS)</span>
+                    <span class="skill-card" style="font-family: 'Plus Jakarta Sans', sans-serif;">NumPy</span>
+                    <span class="skill-card" style="font-family: 'Plus Jakarta Sans', sans-serif;">Pandas</span>
+                    <span class="skill-card" style="font-family: 'Plus Jakarta Sans', sans-serif;">Tensorflow</span>
+                    <span class="skill-card" style="font-family: 'Plus Jakarta Sans', sans-serif;">Jupyter</span>
+                    <span class="skill-card" style="font-family: 'Plus Jakarta Sans', sans-serif;">Bootstrap</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer id="contact">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <h2 style="font-size: 35.384px;font-family: 'Plus Jakarta Sans', sans-serif;"><strong>Contact</strong></h2>
+                    <p class="w-lg-50"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6 footer-navigation">
+                    <div class="container">
+                        <form action="/action_page.php">
+                        <input type="text" id="full-name" name="fullName" placeholder="Full Name">
+                    
+                        <input type="text" id="email" name="email" placeholder="Email">
+                        
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                    
+                        <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                        </form>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 col-md-4 footer-contacts">
+                    <div class="text-center">
+                        <p>Contact</p>
+                    </div>
+                    <div><i class="fa fa-phone footer-contacts-icon"></i>
+                        <p class="footer-center-info email text-start">+1 832 630 3525</p>
+                    </div>
+                    <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                        <p> <a href="#" target="_blank">hua.quenton@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-about">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
