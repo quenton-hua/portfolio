@@ -119,32 +119,29 @@
 </head>
 
 <body>
-
-    <nav id= "dropshadow" class="navbar navbar-light navbar-expand-md py-3 fixed-top " style="height:3rem;background-image: linear-gradient(white,white, rgb(241, 241, 241));">
-        <div class="container" style="background-color: red; padding: 0; height:inherit;">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <span></span>
-            </a>
-            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3">
-                <span class="visually-hidden"></span><span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navcol-3" style="background-color: blue; height:inherit;">
-                <ul class="navbar-nav me-auto" style="background-color: green; ">
-                    <li class="nav-item"><a class="nav-link nav-font active" href="#home" style="background-color: green;">Home</a></li>
-                    <li class="nav-item"><a class="nav-link nav-font" href="#projects-anchor">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link nav-font" href="#skills">Skills &amp; Education</a></li>
-                    <li class="nav-item"><a class="nav-link nav-font" href="#contact">Contact</a></li>
+    <nav id= "dropshadow" class="navbar navbar-light navbar-expand-md py-3 fixed-top " style="background-color: white;">
+        <div class="container">
+                <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-4"><span class="visually-hidden"></span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse flex-grow-0 order-md-first" id="navcol-4">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a id = "btn1" class="nav-link nav-font active" href="#home" >Home</a></li>
+                    <li class="nav-item"><a id = "btn2" class="nav-link nav-font active" href="#projects-anchor">Projects</a></li>
+                    <li class="nav-item"><a id = "btn3" class="nav-link nav-font active" href="#skills-anchor">Technical Skills</a></li>
+                    <li class="nav-item"><a id = "btn4" class="nav-link nav-font active" href="#contact">Contact</a></li>
                 </ul>
-                <div style="margin-left: auto; margin-right: 0; margin-top: ;">
+                <div class="d-md-none my-2">
                     <form action="assets/assets/Resume.pdf" method="get" target="_blank">
                         <button class ="btn-custom button-animated" type="submit">Resume</button>
                     </form>
                 </div>
             </div>
-        </div>
+                <div class="d-none d-md-block">                    
+                    <form action="assets/assets/Resume.pdf" method="get" target="_blank">
+                        <button class ="btn-custom button-animated" type="submit">Resume</button>
+                    </form>
+                </div>
+            </div>
     </nav>
-
-
 
     <div id="home">
         <section>
@@ -153,7 +150,9 @@
                     <div class="col col-md-6 col-sm-12 col-12">
                         <p id="home-subtitle-text">MY NAME IS&nbsp;</p>
                     </div>
-                    <div class="col col-md-6" id="profilepic"></div>
+                    <div class="col-sm-12 col-12 col-md-6" id="profilepic">
+                        <img src="assets/assets/headshot.jpg"  class = "profile-circle" >
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col col-md-6">
@@ -162,16 +161,16 @@
                 </div>
                 <div class="row">
                     <div class="col col-md-6">
-                        <p id="home-paragraph-text"> Junior at Texas A&amp;M University pursuing a bachelors in computer engineering with work experience using agile workflow methodologies and developing machine learning models. Proficient in C++ , Python, and Javascript. </p>
+                        <p id="home-paragraph-text"> I’m a junior at Texas A&M University pursuing a bachelor’s in computer engineering and recently had the opportunity to intern at JP Morgan Chase & Co where I learned how to build, train, and deploy a machine learning model using Python! I have a passion for learning, especially when it comes to computer science, whether that be a new language, library, or framework. I’m proficient in C++, Python, and Javascript.</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col col-md-6">
-                        <a href="https://github.com/quenton-hua" class="icon icon-animated" target="_blank">
-                            <img src="assets/assets/github_icon.png" alt="github Icon" class = "icon" >
+                        <a href="https://www.linkedin.com/in/quenton-hua-9a0571173/"  target="_blank" class = "icon">
+                            <img src="assets/assets/linkedin_icon.png" class = "icon">
                         </a>
-                        <a href="https://www.linkedin.com/in/quenton-hua-9a0571173/" class="icon icon-animated" target="_blank">
-                            <img src="assets/assets/linkedin_icon.png" alt= "linkedin Icon" class = "icon">
+                        <a href="https://github.com/quenton-hua" class="icon" target="_blank">
+                            <img src="assets/assets/github_icon.png"  class = "icon" >
                         </a>
                     </div>
                 </div>
@@ -359,7 +358,7 @@
                     </div>
                 </div>
                 <div class="col">
-                        <div class="card card-custom hvr-grow-shadow"><img class="card-img-top w-100 d-block fit-cover article-card-img" src="assets/assets/headshot.jpg">
+                        <div class="card card-custom hvr-grow-shadow"><img class="card-img-top w-100 d-block fit-cover article-card-img" src="assets/assets/NAEproj.PNG">
                             <div class="card-body p-4 article-card-body custom-card-prop scroll" >
                                 <h4 class="article-card-title-text">NAE Solar Calculator</h4>
                                 <p class = "article-card-subtitle-text"> MATLAB</p>
@@ -367,11 +366,14 @@
     
                             </div>
                             <div style="height:4rem;padding-top:1rem;padding-right: 1rem;">
+                                <form action="https://drive.google.com/file/d/1pCwmv_HmnbFAqeVJ3nPdbGf-7c0HxkPO/view?usp=sharing" method="get" target="_blank">
+                                    <button class="demo-button" role="button" >Demo</button>
+                                </form>
                             </div>
                         </div>
                 </div>
                 <div class="col">
-                        <div class="card card-custom hvr-grow-shadow"><img class="card-img-top w-100 d-block fit-cover article-card-img" src="assets/assets/headshot.jpg">
+                        <div class="card card-custom hvr-grow-shadow"><img class="card-img-top w-100 d-block fit-cover article-card-img" src="assets/assets/blossomproj.png">
                             <div class="card-body p-4 article-card-body custom-card-prop scroll" >
                                 <h4 class="article-card-title-text">Mental Health Tracker (Blossom)</h4>
                                 <p class = "article-card-subtitle-text"> HTML5, CSS, Javascript</p>
@@ -379,7 +381,6 @@
     
                             </div>
                             <div style="height:4rem;padding-top:1rem;padding-right: 1rem;">
-
                                 <form action="https://devpost.com/software/blossom-8r5e1n" method="get" target="_blank">
                                     <button class="demo-button" role="button" >Demo</button>
                                 </form>
@@ -389,46 +390,13 @@
             </div>
         </div>
     </div>
+    <a id="skills-anchor" class="anchor"></a>
     <div id="skills">
-        <div class="container">
 
-
-
-  <div class="rightbox" style="background-color:gray">
-    <div class="rb-container">
-      <ul class="rb">
-        <li class="rb-item" ng-repeat="itembx">
-          <div class="timestamp">
-            3rd May 2020<br> 7:00 PM
-          </div>
-          <div class="item-title">Chris Serrano posted a photo on your wall.</div>
-
-        </li>
-        <li class="rb-item" ng-repeat="itembx">
-          <div class="timestamp">
-            19th May 2020<br> 3:00 PM
-          </div>
-          <div class="item-title">Mia Redwood commented on your last post.</div>
-
-        </li>
-
-        <li class="rb-item" ng-repeat="itembx">
-          <div class="timestamp">
-            17st June 2020<br> 7:00 PM
-          </div>
-          <div class="item-title">Lucas McAlister just send you a message.</div>
-
-        </li>
-
-      </ul>
-
-    </div>
-  </div>
-</div>
         <div class="container">
             <div class="row mb-5">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <h2 style="font-size: 35.384px;font-family: 'Plus Jakarta Sans', sans-serif;"><strong>Skills &amp; Education</strong></h2>
+                    <h2 style="font-size: 35.384px;font-family: 'Plus Jakarta Sans', sans-serif;"><strong>Technical Skills</strong></h2>
                     <p class="w-lg-50"></p>
                 </div>
             </div>
@@ -436,55 +404,40 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p style="font-family: 'Plus Jakarta Sans', sans-serif;font-size: 20px;">Languages</p>
+                    <p style="font-family: 'Plus Jakarta Sans', sans-serif;font-size: 20px; font-weight: bold;">Languages</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 skill-card-spacing">
                     <div></div>
-                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">C++</span>
-                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">Javascript</span>
-                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">HTML</span>
-                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">CSS</span>
-                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">Python</span>
-                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">MATLAB</span>
-                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">Verilog</span>
+                    <span class="skill-card hvr-bounce-in" >C++</span>
+                    <span class="skill-card hvr-bounce-in" >Javascript</span>
+                    <span class="skill-card hvr-bounce-in" >HTML</span>
+                    <span class="skill-card hvr-bounce-in" >CSS</span>
+                    <span class="skill-card hvr-bounce-in" >Python</span>
+                    <span class="skill-card hvr-bounce-in" >MATLAB</span>
+                    <span class="skill-card hvr-bounce-in" >Verilog</span>
 
 
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 ">
-                    <p style="font-family: 'Plus Jakarta Sans', sans-serif;font-size: 20px;">Frameworks/Packages</p>
+                    <p style="font-family: 'Plus Jakarta Sans', sans-serif;font-size: 20px;font-weight: bold;">Frameworks/Packages</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 skill-card-spacing">
-                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">Amazon Web Services (AWS)</span>
-                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">NumPy</span>
-                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">Pandas</span>
-                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">Tensorflow</span>
-                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">Jupyter</span>
-                    <span class="skill-card hvr-bounce-in" style="font-family: 'Plus Jakarta Sans', sans-serif;">Bootstrap</span>
+                    <span class="skill-card hvr-bounce-in" >Amazon Web Services (AWS)</span>
+                    <span class="skill-card hvr-bounce-in" >NumPy</span>
+                    <span class="skill-card hvr-bounce-in" >Pandas</span>
+                    <span class="skill-card hvr-bounce-in" >Tensorflow</span>
+                    <span class="skill-card hvr-bounce-in" >Jupyter</span>
+                    <span class="skill-card hvr-bounce-in" >Bootstrap</span>
                 </div>
 
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p style="font-family: 'Plus Jakarta Sans', sans-serif;font-size: 20px;">Software</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12"></div>
-                <div class="col-md-12">
-                    <span class="skill-card" style="font-family: 'Plus Jakarta Sans', sans-serif;">Amazon Web Services (AWS)</span>
-                    <span class="skill-card" style="font-family: 'Plus Jakarta Sans', sans-serif;">NumPy</span>
-                    <span class="skill-card" style="font-family: 'Plus Jakarta Sans', sans-serif;">Pandas</span>
-                    <span class="skill-card" style="font-family: 'Plus Jakarta Sans', sans-serif;">Tensorflow</span>
-                    <span class="skill-card" style="font-family: 'Plus Jakarta Sans', sans-serif;">Jupyter</span>
-                    <span class="skill-card" style="font-family: 'Plus Jakarta Sans', sans-serif;">Bootstrap</span>
-                </div>
-            </div>
+
         </div>
     </div>
     
@@ -497,39 +450,41 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-md-6 footer-navigation">
-                    <div class="container">
-                        <form action="/action_page.php">
-                        <input type="text" id="full-name" name="fullName" placeholder="Full Name">
+                <div class="col-sm-6 col-md-6">
                     
-                        <input type="text" id="email" name="email" placeholder="Email">
+                    <!-- contact form
+                        <div class="container">
+                            <form action="/action_page.php">
+                            <input type="text" id="full-name" name="fullName" placeholder="Full Name">
                         
-                        <input type="text" id="subject" name="subject" placeholder="Subject">
-                    
-                        <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
-                    
-                        <input type="submit" value="Submit">
-                        </form>
+                            <input type="text" id="email" name="email" placeholder="Email">
+                            
+                            <input type="text" id="subject" name="subject" placeholder="Subject">
+                        
+                            <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+                        
+                            <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                    -->
+                </div>
+                
+                <div class="col-sm-12 col-md-6">
+                    <div class = "container" style="background-color: blue;height: 6em; width: 35em; align-content: center; ">
+                        <div style =" float: left;">
+                            <img style = "height: 6em; width: 6em;"src="assets/assets/github_icon.png"></img>
+                        </div>
+                        <div style="background-color:red; float: left; ">
+                            Phone : +1 832-630-3525
+                        </div>
                     </div>
 
-                </div>
-                <div class="col-sm-6 col-md-4 footer-contacts">
-                    <div class="text-center">
-                        <p>Contact</p>
-                    </div>
-                    <div><i class="fa fa-phone footer-contacts-icon"></i>
-                        <p class="footer-center-info email text-start">+1 832 630 3525</p>
-                    </div>
-                    <div><i class="fa fa-envelope footer-contacts-icon"></i>
-                        <p> <a href="#" target="_blank">hua.quenton@gmail.com</a></p>
-                    </div>
-                </div>
-                <div class="col-md-4 footer-about">
-
+                    
                 </div>
             </div>
         </div>
     </footer>
+
 
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>

@@ -64,7 +64,7 @@ min-width: 0;
   }
   
   .icon:hover {
-
+      text-decoration: none;
       transition-duration: 0.25s;
       opacity: 0.7;
   }
@@ -95,12 +95,14 @@ min-width: 0;
   }
   
   .skill-card {
-    background-color: #8db0ff;
+    background-color: #d8d8d8;
+
     padding: 0.5em 3em 0.5em 3em;
     border-radius: 25px;
-    margin: 0rem;
+    margin: 0.5em 0.5em 0.5em 0em;
     display: inline-block;
-
+    font-family: Inter, sans-serif;
+    
   }
   
   .skill-card-spacing {
@@ -118,7 +120,7 @@ min-width: 0;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0) scale(1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.322);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.322);
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
     position:relative;
@@ -387,7 +389,7 @@ ul.rb li .timestamp {
 
 #home {
   height: initial;
-  padding: 1.25in;
+  padding: 0in;
   padding-top: 18rem;
   padding-bottom: 20rem;
   background-color: #efefef;
@@ -395,8 +397,12 @@ ul.rb li .timestamp {
 
 #projects {
   height: initial;
-  background-color: #bcbcbc;
+  background-color: #DADADA;
   padding-top: 5rem;
+}
+
+#skills {
+  background-color: #efefef;
 }
 
 #title1 {
@@ -404,15 +410,20 @@ ul.rb li .timestamp {
 }
 
 #profilepic {
-  height: 20rem;
+
+
 }
 
 .profile-circle {
   background-color: #316ce8;
   border-radius: 50%;
-  height: inherit;
-  width: inherit;
+  height: 25rem;
+  width: 25rem;
   display: inline-block;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ************************************** contact form************************************** */
@@ -440,5 +451,14 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #45a049;
+  transition: all 0.25s ease-out;
 }
 
+
+.contact-card{
+  
+}
+
+@media (min-width: 768px) {
+    h2 { font-size: 36px; }
+}
