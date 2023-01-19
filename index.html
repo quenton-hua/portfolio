@@ -127,7 +127,9 @@
                     <li class="nav-item"><a id = "btn1" class="nav-link nav-font active" href="#home" >Home</a></li>
                     <li class="nav-item"><a id = "btn2" class="nav-link nav-font active" href="#projects-anchor">Projects</a></li>
                     <li class="nav-item"><a id = "btn3" class="nav-link nav-font active" href="#skills-anchor">Technical Skills</a></li>
+                    <!--
                     <li class="nav-item"><a id = "btn4" class="nav-link nav-font active" href="#contact">Contact</a></li>
+                    -->
                 </ul>
                 <div class="d-md-none my-2">
                     <form action="assets/assets/Resume.pdf" method="get" target="_blank">
@@ -146,35 +148,40 @@
     <div id="home">
         <section>
             <div class="container">
-                <div class="row" id="title1">
-                    <div class="col col-md-6 col-sm-12 col-12">
-                        <p id="home-subtitle-text">MY NAME IS&nbsp;</p>
-                    </div>
-                <!--
-                    <div class="col-sm-12 col-12 col-md-6" id="profilepic">
-                        <img src="assets/assets/headshot.jpg"  class = "profile-circle" >
-                    </div>
-                -->
-                </div>
                 <div class="row">
-                    <div class="col col-md-6">
-                        <p id="home-title-text">Quenton Hua</p>
+                    <div id= "profilediv" class="col-md-6" >
+                            <img src="assets/assets/headshot.jpg"  class = "profile-circle" >
+
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col col-md-6">
-                        <p id="home-paragraph-text"> I’m a junior at Texas A&M University pursuing a bachelor’s in computer engineering and recently had the opportunity to intern at JP Morgan Chase & Co where I learned how to build, train, and deploy a machine learning model using Python! I have a passion for learning, especially when it comes to computer science, whether that be a new language, library, or framework. I’m proficient in C++, Python, and Javascript.</p>
+                    <div class="col-md-6">
+                        <div class="row" id="title1">
+                            <div class="col col-md-12 col-sm-12 col-12" id="home-subtitle-phone" >
+                                <p id="home-subtitle-text">MY NAME IS</p>
+                            </div>
+                        
+                        </div>
+                        <div class="row">
+                            <div class="col col-md-12" id = "home-title-phone">
+                                <p id="home-title-text">Quenton Hua</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-md-12 phone-centering" >
+                                <p id="home-paragraph-text"> I’m a junior at Texas A&M University pursuing a bachelor’s in computer engineering and recently had the opportunity to intern at JP Morgan Chase & Co where I learned how to build, train, and deploy a machine learning model using Python! I have a passion for learning, especially when it comes to computer science, whether that be a new language, library, or framework. Currently I’m learning React Native for a mobile app I’m developing with a friend! I’m proficient in C++ and Python.   </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-md-6 phone-centering" >
+                                <a href="https://www.linkedin.com/in/quenton-hua-9a0571173/"  target="_blank" class = "icon">
+                                    <img src="assets/assets/linkedin_icon.png" class = "icon">
+                                </a>
+                                <a href="https://github.com/quenton-hua" class="icon" target="_blank">
+                                    <img src="assets/assets/github_icon.png"  class = "icon" >
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col col-md-6">
-                        <a href="https://www.linkedin.com/in/quenton-hua-9a0571173/"  target="_blank" class = "icon">
-                            <img src="assets/assets/linkedin_icon.png" class = "icon">
-                        </a>
-                        <a href="https://github.com/quenton-hua" class="icon" target="_blank">
-                            <img src="assets/assets/github_icon.png"  class = "icon" >
-                        </a>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -347,15 +354,17 @@
         <div class="container py-4 py-xl-5" >
             <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
                 <div class="col">
-                    <div class="card card-custom hvr-grow-shadow" ><img class="card-img-top w-100 d-block fit-cover article-card-img" src="assets/assets/headshot.jpg">
+                    <div class="card card-custom hvr-grow-shadow" ><img class="card-img-top w-100 d-block fit-cover article-card-img" src="assets/assets/personalwebsite.PNG">
                         <div class="card-body p-4 article-card-body custom-card-prop scroll" >
                             <h4 class="article-card-title-text">Personal Website</h4>
                             <p class = "article-card-subtitle-text"> HTML5, CSS, Javascript</p>
-                            <p class="article-card-paragraph-text"  >A portfolio website made using HTML5, CSS, Javascript, and the Bootstrap framework to log all my software projects. </p>
+                            <p class="article-card-paragraph-text"  >A responsive portfolio website made using the Bootstrap framework and custom HTML, CSS, and Javascript to log all my software projects. </p>
 
                         </div>
                         <div style="height:4rem;padding-top:1rem;padding-right: 1rem;">
-                            <button class="github-button" role="button">Github</button>
+                            <form action="https://github.com/quenton-hua/personalwebsite" method="get" target="_blank">
+                                <button class="github-button" role="button">Github</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -405,12 +414,12 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 phone-centering">
                     <p style="font-family: 'Plus Jakarta Sans', sans-serif;font-size: 20px; font-weight: bold;">Languages</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 skill-card-spacing">
+                <div class="col-md-12 skill-card-spacing phone-centering " >
                     <div></div>
                     <span class="skill-card hvr-bounce-in" >C++</span>
                     <span class="skill-card hvr-bounce-in" >Javascript</span>
@@ -424,12 +433,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 ">
+                <div class="col-md-12 phone-centering ">
                     <p style="font-family: 'Plus Jakarta Sans', sans-serif;font-size: 20px;font-weight: bold;">Frameworks/Packages</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 skill-card-spacing">
+                <div class="col-md-12 skill-card-spacing phone-centering">
                     <span class="skill-card hvr-bounce-in" >Amazon Web Services (AWS)</span>
                     <span class="skill-card hvr-bounce-in" >NumPy</span>
                     <span class="skill-card hvr-bounce-in" >Pandas</span>
@@ -445,11 +454,14 @@
     
     <footer id="contact">
         <div class="container">
+            <div></div>
             <div class="row mb-5">
+                <!--
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
                     <h2 style="font-size: 35.384px;font-family: 'Plus Jakarta Sans', sans-serif;"><strong>Contact</strong></h2>
                     <p class="w-lg-50"></p>
                 </div>
+                -->
             </div>
             <div class="row">
                 <div class="col-sm-6 col-md-6">
@@ -469,21 +481,26 @@
                             </form>
                         </div>
                     -->
-                </div>
                 
+                </div>
+                <!--
                 <div class="col-sm-12 col-md-6">
-                    <!--
-                    <div class = "container" style="background-color: blue;height: 6em; width: 35em; align-content: center; ">
-                        <div style =" float: left;">
-                            <img style = "height: 6em; width: 6em;"src="assets/assets/github_icon.png"></img>
-                        </div>
-                        <div style="background-color:red; float: left; ">
-                            Phone : +1 832-630-3525
+                    
+                    <div class = "container" >
+                        <div class="row">
+                            <div class=" col-2">
+                                <img style = "height: 6em; width: 6em;"src="assets/assets/github_icon.png"></img>
+
+                            </div>
+                            <div class="col-8" style="background-color: red;">
+                                Phone : +1 832-630-3525
+                            </div>
                         </div>
                     </div>
-                -->
+            
                     
                 </div>
+                -->
             </div>
         </div>
     </footer>
