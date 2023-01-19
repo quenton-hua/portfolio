@@ -415,14 +415,12 @@ ul.rb li .timestamp {
 }
 
 .profile-circle {
-  background-color: #316ce8;
-  border-radius: 50%;
+  
   height: 30rem;
   width: 30rem;
-  display: inline-block;
-  object-fit: cover;
-  display: block;
-  object-position: -30px;
+  max-width: 100%;
+  height: auto;
+ 
 }
 
 /* ************************************** contact form************************************** */
@@ -460,15 +458,7 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 768px) {
     h2 { font-size: 36px; }
-    .profile-circle {
-      background-color: #316ce8;
-      border-radius: 50%;
-      height: 25rem;
-      width: 25rem;
-      object-fit: cover;
-      margin-left: auto;
-      margin-right:auto;
-    }
+
     #home{
       padding:1in 0.4in 1in 0.4in;
       
